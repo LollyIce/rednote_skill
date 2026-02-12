@@ -1,0 +1,60 @@
+{
+    "_comment": "小红书 Web 端 CSS 选择器集中管理，按模块分类。网站改版后仅需更新此文件。",
+    "login": {
+        "login_button": "button:has-text('登录'), .login-btn",
+        "qr_code": ".qrcode-img",
+        "user_avatar": ".reds-avatar, .reds-avatar img",
+        "logged_in_indicator": "a[href*='/user/profile/'], a.link-wrapper[title='我'], .reds-avatar",
+        "login_popup_close": "button.close-icon, div.close-icon, .reds-button-new.close-icon, [class*='close-button']"
+    },
+    "search": {
+        "search_input": "#search-input, .search-input input, input[placeholder*='搜索']",
+        "search_button": ".search-btn, .search-icon, button[type='submit']",
+        "filter_button": "div.filter",
+        "filters_wrapper": ".filters-wrapper",
+        "note_list": ".feeds-page, .search-result-container",
+        "note_item": "section.note-item",
+        "note_title": "a.title, .title span",
+        "note_link": "a.cover",
+        "note_like_count": ".like-wrapper .count, span.count",
+        "note_author": ".author-wrapper .name, .author .name, span.name",
+        "load_more": ".load-more-btn, .loading-more"
+    },
+    "note_detail": {
+        "popup_mask": ".note-detail-mask",
+        "popup_container": ".note-container, #noteContainer",
+        "close_button": "div.close-box",
+        "note_scroller": ".note-scroller",
+        "title": "#detail-title, .note-scroller .title, #noteContainer .title",
+        "content": "#detail-desc, .note-scroller .desc, #noteContainer .desc",
+        "like_count": ".interact-container .like-wrapper .count",
+        "collect_count": ".interact-container .collect-wrapper .count",
+        "comment_count": ".interact-container .chat-wrapper .count",
+        "tags": ".tag, #hash-tag, a.tag",
+        "publish_time": ".bottom-container .date, span.date",
+        "author_name": ".author-container .name, #noteContainer .author-wrapper .name",
+        "cover_image": ".note-cover img, .slide-item img, .carousel-item img"
+    },
+    "explore": {
+        "topic_card": ".topic-card, .channel-item, .category-item, .topic-wrapper",
+        "topic_name": ".topic-name, .channel-name, .title, span",
+        "topic_view_count": ".view-count, .count, .desc, .hot-num"
+    },
+    "trending": {
+        "hot_search_item": ".trending-item, .hot-item, .search-trending-item, .hot-list-item, .hot-word, li[class*='hot']",
+        "hot_search_name": ".title, .name, .word, span, a",
+        "hot_search_rank": ".rank, .index, .num, .order",
+        "hot_search_heat": ".hot-score, .heat, .score, .count, .number"
+    },
+    "publish": {
+        "publish_tab_note": ".tab-item:contains('发布笔记'), .publish-type .type-item:first-child",
+        "title_input": "input[placeholder*='标题'], .title-input input, #title-input",
+        "content_input": ".ql-editor, .content-input, [contenteditable='true'], #post-textarea",
+        "tag_input": ".tag-input input, input[placeholder*='标签'], input[placeholder*='话题']",
+        "tag_suggestion": ".tag-suggestion-item, .topic-item",
+        "cover_upload": "input[type='file'], .upload-input",
+        "publish_button": ".publish-btn, button:contains('发布'), .submit-btn",
+        "draft_button": ".draft-btn, button:contains('存草稿'), .save-draft-btn",
+        "confirm_dialog_ok": ".confirm-btn, .dialog-confirm, .modal-confirm"
+    }
+}
